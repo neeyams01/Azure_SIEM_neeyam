@@ -27,7 +27,6 @@ After deploying the VM, Microsoft Sentinel was deployed as the SIEM solution to 
 
 - Created Custom alert rules to monitor RDP sign-ins and log any suspicious activity.
 The custom rule detects RDP login events, involving successful RDP logins. Failed login attempts were filtered out for this rule.
-Analytics Rule log.jpeg
 The rules were configured in Microsoft Sentinel to run every 5 minutes and notify when the conditions were met.
 
 Testing the config
