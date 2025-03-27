@@ -22,11 +22,12 @@ SetUp & Configuration
 - Configuring Microsoft Sentinel
 After deploying the VM, Microsoft Sentinel was deployed as the SIEM solution to monitor logs and detect security events.
 - Creating Log Analytics workspace - Default Configurations were used. 
-- After creating Microsoft Sentinel it is linked with the log analytics to enable log collection and monitoring
+- After creating Microsoft Sentinel it is linked with the log analytics to enable log collection and monitoring.
 - Installed Windows Security events (AMA) and configured data connectors in Microsoft Sentinels to pull logs from the VM.
 
 - Created Custom alert rules to monitor RDP sign-ins and log any suspicious activity.
 The custom rule detects RDP login events, involving successful RDP logins. Failed login attempts were filtered out for this rule.
+Analytics Rule log.jpeg
 The rules were configured in Microsoft Sentinel to run every 5 minutes and notify when the conditions were met.
 
 Testing the config
